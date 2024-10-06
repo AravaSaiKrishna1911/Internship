@@ -1,0 +1,74 @@
+/* Container for the selected roles section */
+.selected-roles-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading for the selected roles section */
+.selected-roles-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #0b0b0b;
+    margin-bottom: 30px;
+}
+
+/* Styling for the selected roles list */
+.selected-roles-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Styling for each selected role item */
+.selected-roles-container ul li {
+    background-color: #4CAF50;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Link inside the role item */
+.selected-roles-container ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Hover effect for each role item */
+.selected-roles-container ul li:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+/* Empty state for no roles selected */
+.selected-roles-container li {
+    font-size: 18px;
+    color: #080808;
+    text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .selected-roles-container {
+        padding: 15px;
+    }
+
+    .selected-roles-container ul li {
+        padding: 12px;
+    }
+
+    .selected-roles-container ul li a {
+        font-size: 16px;
+    }
+}

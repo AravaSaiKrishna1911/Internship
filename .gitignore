@@ -21,3 +21,19 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignore log files and system files
+*.log
+.idea/
+.vscode/
+Thumbs.db
+
+# Ignore specific environment configuration files
+.env
+.env.*.local
+
+# Ignore production-specific files
+/dist
+
+# Allow src/components and other source files to be tracked
+!src/components/
